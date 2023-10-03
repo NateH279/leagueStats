@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/*
+NavBar
+*/
+
+.navBar {
+  position: relative;
+  height: 4rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  background-color: #00ff85;
+}
+
+h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #ffffff;
+  text-indent: 15%;
+}
+
+
+/*
+League Table Display
+*/
+.leagueTable {
+  width: 80%;
+  height: auto;
+  text-align: center;
+  margin-left: 7.5%;
+}
+
+.leagueTableHeader {
+  display: grid;
+  grid-template-columns: 1fr repeat(8, 4ch);
+  background-color: #00ff85;
+  border-radius: 5px;
+  padding: 2px;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  margin-bottom: 0.313rem;
+}
+
+.leagueTableHeader > div:nth-of-type(9n+1) {
+  text-align: left;
+}
+
+.clubInfo {
+  display: grid;
+  grid-template-columns: 1fr repeat(8, 4ch);
+  border-bottom: solid 1px #e90052;
+  padding: 2px;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  margin-bottom: 0.313rem;
+}
+
+.clubInfo > div:nth-of-type(9n+1) {
+  text-align: left;
+}
+
+
+
+/*
+color palette for premier league
+#04f5ff - aqua
+#e90052 - pink
+#ffffff - white
+#00ff85 - green
+#38003c - purple
+*/
