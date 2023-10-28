@@ -7,6 +7,8 @@ import LeagueData from '../leagueData.json'
 import '../index.css'
 
 const LeagueTable = () => {
+
+   
   const tableLabels = ['Club', 'MP', 'W', 'D', 'L', 'GF', 'GA', 'GD', 'Pts']
   const [data, setData] = useState(LeagueData)
 
