@@ -1,7 +1,7 @@
 import { useGetTeamsQuery } from "./teamsApiSlice"
 import Team from './Team'
 
-const TeamsList = () => {
+const PremierLeagueTable = () => {
     const { 
         data: teams,
         isLoading,
@@ -21,8 +21,14 @@ const TeamsList = () => {
     if (isSuccess) {
         const { ids } = teams
 
-        const table = ids?.length ? ids.map((teamId) => (
-            <Team key={teamId} teamId={teamId} />
+        const sortedIds = [...ids]
+
+        sortedIds.sort((teamA, teamB) => {
+            return (teams.entities[teamB]?.points || 0) - (teams.entities[teamA]?.points || 0)
+        })
+
+        const table = sortedIds?.length ? sortedIds.map((teamId, index) => (
+            <Team key={teamId} teamId={teamId} currentPos={index + 1}/>
         )) : null
         
         
@@ -31,15 +37,15 @@ const TeamsList = () => {
             return teams.entities[teamB.key].points - teams.entities[teamA.key].points
         })
 
-        // Need to figure out how to sort the incoming data
         const tableHeaders = ['Club', 'MP', 'W', 'D', 'L', 'GF', 'GA', 'GD', 'Pts']
 
         content = (
             <ul className="leagueTable">
                 <li className="leagueTableHeader">
+                    <div></div>
                     {tableHeaders.map((label, index) => (
                         <div>
-                            <span key={index}>{label}</span>
+                            <p key={index}>{label}</p>
                         </div>
                     ))}
                 </li>
@@ -51,4 +57,4 @@ const TeamsList = () => {
     return content
 }
 
-export default TeamsList
+export default PremierLeagueTable

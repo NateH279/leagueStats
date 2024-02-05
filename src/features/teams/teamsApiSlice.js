@@ -44,7 +44,6 @@ const selectTeamsData = createSelector(
     teamsResult => teamsResult.data
 )
 
-// getSelectors is creating selectors and I am renaming them for my understanding
 export const {
     selectAll: selectAllTeams,
     selectById: selectTeamsById,

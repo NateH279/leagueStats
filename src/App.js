@@ -1,12 +1,11 @@
-import LeagueTable from "./components/LeagueTable";
 import NavBar from "./components/NavBar";
-import TeamsList from "./features/teams/TeamsList";
+import PremierLeagueTable from "./features/teams/premierLeagueTable";
 
 function App() {
   return (
     <div>
       <NavBar />
-      <TeamsList />
+      <PremierLeagueTable />
     </div>
     
   );
