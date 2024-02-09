@@ -1,0 +1,11 @@
+.league {
+    min-height: 100vh;
+    border-top: 2px white solid;
+}
+
+.table-title {
+    color: #fa9f42;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    margin-left: 5%;
+}

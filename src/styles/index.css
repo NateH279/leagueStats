@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #070d0f;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: #FA9F42;
+}
+
+h2 {
+  color: #E0E0E2;
+}
+
+/*
+#070D0F - Black
+#1A271F - Dark Green
+#00FF85 - Premier Green
+#FA9F42 - Light Orange
+#E0E0E2 - Offwhite
+*/

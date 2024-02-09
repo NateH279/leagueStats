@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector } from "react-redux"
 import { selectTeamsById } from "./teamsApiSlice"
 
-const Team = ({ teamId, currentPos }) => {
+const Team = ({ teamId }) => {
     const team = useSelector(state => selectTeamsById(state, teamId))
 
     useEffect(() => {
@@ -21,7 +21,7 @@ const Team = ({ teamId, currentPos }) => {
               <div className="flipper">
                 <div className="front"></div>
                 <div className="back">
-                  <p id="clubInfo-currentPos">{currentPos}</p>
+                  <p id="clubInfo-currentPos"></p>
                 </div>
               </div>
 
