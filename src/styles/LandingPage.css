@@ -1,0 +1,37 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  min-height: 90vh;
+  color: white;
+  text-align: center;
+}
+
+.landing-title {
+  -ms-transform: translateY(-50%);
+  transform: translateY();
+}
+
+.landing-title > h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.leaguesButton {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 12.5%;
+  right: 10%;
+  color: #00ff85;
+  background-color: #1a271f;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.leaguesButton > h2 {
+  margin: 0;
+  padding: 0;
+}
