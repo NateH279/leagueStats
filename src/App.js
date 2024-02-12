@@ -1,8 +1,10 @@
 import React from "react";
-import NavBar from "./components/NavBar";
-import Home from "./components/LandingPage";
-import League from "./components/League";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Welcome from "./components/Welcome"
+import League from "./features/League";
 import './styles/App.css'
+
 
 function FadeInSection(props) {
   const [isVisible, setVisible] = React.useState(false);
@@ -26,17 +28,14 @@ function FadeInSection(props) {
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <FadeInSection>
-        <Home />
-      </FadeInSection>
-      <FadeInSection>
-        <League />
-      </FadeInSection>
-
-      
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />} >
+        <Route index element={<Welcome />} />
+        <Route path="leagues">
+          <Route index element={<League />} />
+        </Route>
+      </Route>
+    </Routes>
     
   );
 }

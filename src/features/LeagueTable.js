@@ -1,7 +1,7 @@
 import { useGetStandingsQuery } from "./standings/standingsApiSlice"
 import { useGetTeamsQuery } from "./teams/teamsApiSlice"
 import Standing from "./standings/Standing"
-import '../styles/premierLeagueTable.css'
+import '../styles/LeagueTable.css'
 
 const LeagueTable = () => {
     const { 

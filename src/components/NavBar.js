@@ -1,32 +1,35 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../styles/NavBar.css'
 
 const NavBar = () => {
   return (
-    <div className="navBar">
-        <div className="navBar-title">
-          <h1>
-              leagueStats
-          </h1>
+    <header>
+      <div className="navBar">
+        
+        <div className="navBar-title-containter">
+          <Link to="/">
+            <h1 className="navBar-title">leagueStats</h1>
+          </Link>
         </div>
-        <div className="directory">
-          <div>
-            <h3>
-                Leagues
-            </h3>
+        
+        <nav className="directory">
+          <Link to="/leagues">
+            <div className="navLink">
+              <h3>Leagues</h3>
+            </div>
+          </Link>
+          
+          <div className="navLink">
+            <h3>Teams</h3>
           </div>
-          <div>
-            <h3>
-                Teams
-            </h3>
+
+          <div className="navLink">
+            <h3>Players</h3>
           </div>
-          <div>
-            <h3>
-                Players
-            </h3>
-          </div>
-        </div>
-    </div>
+        </nav>
+      </div>
+    </header>
   )
 }
 

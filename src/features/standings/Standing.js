@@ -6,6 +6,7 @@ import { selectStandingsById } from "./standingsApiSlice"
 const Standing = ({ standingId }) => {
   const standing = useSelector(state => selectStandingsById(state, standingId))
   const team = useSelector(state=> selectTeamsById(state, standing.teamID))
+
   useEffect(() => {
     const flippers = document.querySelectorAll('.flipper')
     flippers.forEach((flipper, index) => {
@@ -14,8 +15,6 @@ const Standing = ({ standingId }) => {
       }, index * 15); // Adjust the delay duration if needed
     });
   }, []);
-
-  
 
 
   if (standing) {

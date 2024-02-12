@@ -1,5 +1,5 @@
 import React from 'react'
-import PremierLeagueTable from '../features/LeagueTable'
+import LeagueTable from './LeagueTable'
 import '../styles/League.css'
 
 const League = () => {
@@ -10,7 +10,9 @@ const League = () => {
                 Premier League 2022/2023 Season
             </h1>
         </div>
-       <PremierLeagueTable />
+        <div className='table-container'>
+          <LeagueTable />
+        </div>
     </div>
   )
 }

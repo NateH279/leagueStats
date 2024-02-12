@@ -2,20 +2,18 @@
     display: flex;
     height: 5rem;
     background-color: #00ff85;
-    color: #ffffff;
     align-items: center;
 }
 
-.navBar-title {
+.navBar-title-containter {
     margin-left: 2.5%;
-    height: fit-content;
-    font-size: larger;
-    
+    min-width: fit-content;
 }
 
-.navBar-title > h1 {
+.navBar-title {
+    font-size: 2rem;
     padding-right: 20px;
-    border-right: 5px solid #ffffff;
+    border-right: 5px solid #E0E0E2;
 }
 
 .directory {
@@ -25,6 +23,6 @@
     align-items: center;
 }
 
-.directory > div {
+.navLink {
     padding-right: 20px;
 }

@@ -6,6 +6,10 @@ body {
   background-color: #070d0f;
 }
 
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
 }
@@ -16,6 +20,10 @@ h1 {
 
 h2 {
   color: #E0E0E2;
+}
+
+h3 {
+  color: #070D0F;
 }
 
 /*
