@@ -1,0 +1,29 @@
+.team-banner {
+    display: flex;
+    position: relative;
+    background-color: #1A271F;
+    align-items: flex-end;
+    padding: 1rem;
+    background-image: url(../../public/imgs/bannerTest9.png); 
+}
+
+.team-banner > h2 {
+    margin: 0;
+    margin-left: 2rem;
+    font-size: 4.5rem;
+}
+
+.teamView {
+    display: flex;
+    width: 100%;
+}
+
+.teamView-child {
+    background-color: red;
+    flex-grow: 1;
+}
+
+.team-banner-image {
+    height: 10rem;
+    width: 10rem;
+}

@@ -20,13 +20,18 @@ const NavBar = () => {
             </div>
           </Link>
           
-          <div className="navLink">
-            <h3>Teams</h3>
-          </div>
-
-          <div className="navLink">
-            <h3>Players</h3>
-          </div>
+          <Link to="/teams">
+            <div className="navLink">
+              <h3>Teams</h3>
+            </div>
+          </Link>
+          
+          <Link to="/players">
+            <div className="navLink">
+              <h3>Players</h3>
+            </div>
+          </Link>
+          
         </nav>
       </div>
     </header>

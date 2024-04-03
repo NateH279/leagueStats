@@ -8,11 +8,13 @@ const initialState = standingsAdapter.getInitialState()
 export const standingsApiSlice = apiSlice.injectEndpoints({
     endpoints: builder => ({
         getStandings: builder.query({
-            query: () => '/standings',
-            validateStatus: (response, result) => {
-                return response.status === 200 && !result.isError
-            },
-            keepUnusedDataFor: 5, // Very short, Default is 60s
+            query: () => ({
+                url: '/standings',
+                validateStatus: (response, result) => {
+                    return response.status === 200 && !result.isError
+                }
+            }),
+            // keepUnusedDataFor: 5,  Very short, Default is 60s
             transformResponse: responseData => {
                 const loadedStandings = responseData.map(standing => {
                     standing.id = standing._id

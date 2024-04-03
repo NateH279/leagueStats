@@ -1,6 +1,6 @@
 import React from 'react'
-import LeagueTable from './LeagueTable'
-import '../styles/League.css'
+import LeagueTable from '../LeagueTable'
+import '../../styles/League.css'
 
 const League = () => {
   return (
