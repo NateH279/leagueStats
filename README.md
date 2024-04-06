@@ -1,3 +1,11 @@
+# leagueStats
+This is a web app that currently takes data from the English Premier League season and make it easy to find all the information you need. This is a React.js application and is part of a full stack project that includes a MongoDB database as well as a backend api built with Node.js and Express.js.
+
+This is a project that is being used to help me reach my goal of becoming a full stack developer. I have never create a full stack application. This is as learning process. If you have any suggestions leave them below.
+
+# Goal
+Eventually this applictation will be set with live data and not historical data.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
