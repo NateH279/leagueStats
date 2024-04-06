@@ -1,0 +1,13 @@
+.teamList-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-grid-container {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(4, 20%);
+    grid-row-gap: 5%;
+    grid-column-gap: 1%;
+}

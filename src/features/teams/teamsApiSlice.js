@@ -8,11 +8,13 @@ const initialState = teamsAdapter.getInitialState()
 export const teamsApiSlice = apiSlice.injectEndpoints({
     endpoints: builder => ({
         getTeams: builder.query({
-            query: () => '/teams',
-            validateStatus: (response, result) => {
-                return response.status === 200 && !result.isError
-            },
-            keepUnusedDataFor: 5, // Very short, Default is 60s
+            query: () => ({
+                url: '/teams',
+                validateStatus: (response, result) => {
+                    return response.status === 200 && !result.isError
+                },
+            }),
+            // keepUnusedDataFor: 7,  Very short, Default is 60s
             transformResponse: responseData => {
                 const loadedTeams = responseData.map(team => {
                     team.id = team._id
